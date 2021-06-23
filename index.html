@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pomodoro Clock</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<main>
+		<h1>Pomodoro Clock</h1>
+		<div id="clock">
+			<div id="length-control">
+				<div class="control">
+					<p>Break Length</p>
+					<button data-action="increaseBreak">+</button>
+					<span id="break">5</span>
+					<button data-action="decreaseBreak">-</button>
+				</div>
+				<div class="control">
+					<p>Session Length</p>
+					<button data-action="increaseSession">+</button>
+					<span id="session">25</span>
+					<button data-action="decreaseSession">-</button>
+				</div>
+			</div>
+			<div id="timer-container">
+				<div id="current">Session</div>
+				<div id="timer">25:00</div>
+				<button>
+					<i class="fa fa-play fa-2x" data-action="toggleTimer"></i>
+					<i class="fa fa-pause fa-2x" data-action="toggleTimer"></i>
+				</button>
+				<button>
+					<i class="fa fa-refresh fa-2x" data-action="resetTimer"></i>
+				</button>
+			</div>
+		</div>
+
+		<section id="quote-container">
+			<i class="fa fa-quote-left"></i>
+			<span id="quote"></span>
+			<div id="quote-author"></div>
+		</section>
+	</main>
+
+	<aside>
+		<h2>Todo List</h2>
+		<div id="todos"></div>
+
+		<div id="addTask">+ Add Task</div>
+		<div id="task">
+			<p>What are you working on?</p>
+			<input id="description" type="text">
+			<p>Estimate time need?</p>
+			<input id="estimate" type="number">
+			<span>min</span><br>
+			<button id="cancel">Cancel</button>
+			<button id="submit">Submit</button>
+		</div>
+		<div id="finish">
+			Everything is done!
+		</div>
+	</aside>
+
+	<script src="Timer.js"></script>
+	<script src="TodoList.js"></script>
+	<script src="script.js"></script>
+</body>
+</html>

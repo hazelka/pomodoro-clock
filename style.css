@@ -1,0 +1,164 @@
+@import 'https://fonts.googleapis.com/css?family=Share+Tech+Mono|Righteous';
+@import 'https://fonts.googleapis.com/css?family=Raleway:400,500';
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+:root {
+	--darkgray: #545f66;
+	--lightgray: #829399;
+	--lightblue: #d0f4ea;
+	--lightgreen: #e8fcc2;
+	--darkgreen: #006666;
+}
+
+* {
+	box-sizing: border-box;
+	font-family: 'Righteous';
+}
+
+body {
+	margin: 0;
+}
+
+main {
+	background: var(--darkgray);
+	color: var(--lightblue);
+	min-height: 100vh;
+	margin-right: 300px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+h1 {
+	font-size: 4rem;
+}
+
+#clock {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-size: 1.5rem;
+}
+
+#length-control {
+	display: flex;
+	width: 500px;
+	justify-content: space-around;
+}
+
+#timer-container {
+	width: 200px;
+	text-align: center;
+	border: 5px solid var(--lightgray);
+	background:  var(--lightgray);
+	color: white;
+	margin: 3rem;
+	border-radius: 5px;
+	padding: 1rem;
+}
+
+#quote {
+	width: 80%;
+}
+
+.control {
+	text-align: center;
+}
+
+.control button {
+	font-size: 2rem;
+	color: var(--todolist);
+}
+
+#timer {
+	font-family: 'Orbitron', sans-serif;
+	font-size: 2rem;
+	margin: 1rem;
+}
+button {
+	background: none;
+	border: none;
+}
+
+button:focus, input:focus {
+	outline: none;
+}
+
+aside {
+	background: var(--lightgray);
+	color: var(--lightblue);
+	padding: 1rem 2rem;
+}
+
+#addTask, #task {
+	border: 5px dashed var(--lightgreen);
+	padding: 1rem;
+}
+
+#task {
+	display: none;
+	padding: 1rem;
+}
+
+#task button {
+	background: var(--lightgreen);
+	color: var(--darkgreen);
+	padding: 0.5rem;
+	border-radius: 5px;
+}
+
+.todo {
+	background: var(--lightgreen);
+	color: var(--darkgreen);
+	border-radius: 5px;
+	margin: 1rem 0;
+	padding: 1rem;
+}
+
+input {
+	background: none;
+	border: none;
+	border-bottom: 1px solid black;
+	margin-bottom: 1rem;
+	padding: 1rem;
+}
+
+#finish {
+	margin: 1rem;
+	text-align: center;
+	font-size: 1.2rem;
+}
+
+#quote-container {
+	margin: 50px; 
+	width: 500px;
+}
+
+#quote, #quote-author{
+	font-family: 'Raleway';
+}
+
+#quote {
+	font-size: 1.5rem;
+}
+
+#quote-author {
+	text-align: right;
+}
+
+@media screen and (max-width: 900px) {
+	main {
+		margin: 0;
+	}
+}
+
+@media screen and (min-width: 900px) {
+	aside {
+		height: 100%;
+		width: 350px;
+		position: fixed;
+		top: 0;
+		right: 0;
+		overflow: auto;
+	}
+}
