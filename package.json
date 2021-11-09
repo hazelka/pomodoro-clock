@@ -1,0 +1,24 @@
+{
+  "name": "pomodoro-clock",
+  "version": "1.0.0",
+  "description": "Pomodoro clock with to-do list function",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hazelka/pomodoro-clock.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hazelka/pomodoro-clock/issues"
+  },
+  "homepage": "https://github.com/hazelka/pomodoro-clock#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.16.0",
+    "@babel/core": "^7.16.0",
+    "@babel/preset-env": "^7.16.0"
+  }
+}
