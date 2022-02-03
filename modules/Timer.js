@@ -102,3 +102,5 @@ class Timer {
 		this.updateTimer();
 	}
 }
+
+export default Timer;

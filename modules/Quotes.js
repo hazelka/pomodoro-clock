@@ -16,3 +16,5 @@ class Quotes {
 		document.getElementById('quote-author').innerHTML = '- ' + this.quotes[random].author;
 	}
 }
+
+export default Quotes;

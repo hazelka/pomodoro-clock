@@ -95,3 +95,5 @@ class TodoList {
 		todo.remove();
 	}
 }
+
+export default TodoList;
